@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+TODO: Create a draft viewer that will show up when the drafts are clicked
+- Begin with simply displaying text
+- Later add fill-in-the-blank functionality (probably a drop-down)
+TODO: Functionality for openDraft function including: 
+- Select correct text
+- Display in draft viewer
+TODO: Fix the styling for the side navigation menu 
+TODO: Fix the styling for the top navigation menu
+TODO: Fix the styling for the emails
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href = "style.css">
+        <script src="email-script.js"></script>
+    </head>
+    <body>
+        <!--SIDE NAVIGATION MENU-->
+        <div class="sidenav">
+            <p>Mail</p>
+            <a href="#">Inbox</a>
+            <a href="#">Starred</a>
+            <a href="#">Sent</a>
+            <a href="#">Drafts</a>
+        </div>
+          
+        <div class="ctent">
+            <!-- TOP NAVIGATION MENU -->
+            <div class="topnav">
+                <a class="active" href="#">[Mail Name]</a>
+                <div class="search-container">
+                    <form action="/">
+                    <input type="text" placeholder="Search.." name="search">
+                    </form>
+                </div>
+            </div>
+            <!-- EMAIL -->
+            <div class="email">
+                <table>
+                    <tr>
+                        <th>DRAFTS</th>
+                      </tr>
+                      <tr>
+                        <td><button class="email" onclick="openDraft(1);">Draft 1</button></td>
+                      </tr>
+                      <tr>
+                        <td><button class="email" onclick="openDraft(2);">Draft 2</button></td>
+                      </tr>
+                      <tr>
+                        <td><button class="email" onclick="openDraft(3);">Draft 3</button></td>
+                      </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
