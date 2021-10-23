@@ -28,6 +28,11 @@ body {
     padding-top: 20px;
 }
 
+#compose {
+    color: red; 
+    
+}
+
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -101,6 +106,7 @@ body {
 .topnav .search-container button:hover {
     background: #ccc;
 }
+
 
 @media screen and (max-width: 600px) {
     .topnav .search-container {
