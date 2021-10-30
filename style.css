@@ -7,7 +7,7 @@ body {
 /* ------------ PAGE CONTENTS ------------- */
 .email table, td, th, button {
     border-collapse: collapse; 
-    border: solid 1px black;
+    border: solid 1px black;  /* solid border*/
     width:100%;
 }
 th {
