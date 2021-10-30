@@ -10,9 +10,12 @@ body {
     border: solid 1px black;
     width:100%;
 }
+th {
+    background-color: rgb(155, 194, 245); /*Added*/   
+}
 
 .ctent {
-    margin-left:10%;
+    margin-left:10%;  /*margin*/
 }  
 
 /* -------- SIDE NAVIGATION MENU -------*/
