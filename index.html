@@ -53,8 +53,48 @@ TODO: Fix the styling for the emails
                       <tr>
                         <td><button class="email" onclick="openDraft(3);">Draft 3</button></td>
                       </tr>
+                      <button class="open-button" onclick="openForm()">Draft 1</button>
+
+                      <div class="form-popup" id="myForm">
+                       <form action="/action_page.php" class="form-container">
+                       
+                          <button type="button" class="btn cancel" id="cancel" onclick="closeForm()">X</button>
+                          <h1>New Message</h1>
+             
+                          <label for="To"><b>To</b></label>
+                          <input type="text" placeholder="" id="button" name="email" required>
+                      
+                          <label for="psw"><b>Subject</b></label>
+                          <input type="subject" placeholder=" " id="button1" name="psw" style= "margin-left: 10px" required>
+                          
+                          <label for="w3review"></label>
+                          <textarea id="w3review" name="w3review" rows="30" cols="30" style= "width: 93%;">
+                         </textarea>
+                        
+                          <button type="button" id="send" class="btn">Send</button>
+                       
+                        </form>
+                      </div>
+
+                      <script>
+                      function openForm() {
+                        document.getElementById("myForm").style.display = "block";
+                      }
+
+                      function closeForm() {
+                        document.getElementById("myForm").style.display = "none";
+                      }
+                      </script>
+                      function closeForm() {
+                        document.getElementById("myForm").style.display = "none";
+                      }
+                      </script>
+
                 </table>
             </div>
+            <div> draft viewer</div>
+            
         </div>
     </body>
 </html>
+
