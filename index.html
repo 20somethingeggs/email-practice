@@ -18,8 +18,7 @@ TODO: Functionality for openDraft function including:
     <body>
         <!--SIDE NAVIGATION MENU-->
         <div class="sidenav">
-            <p>Mail</p>
-            <p id= "gmail">Gmail</p>
+            <p id= "gmail">Email</p>
             <p id= "compose">Compose</p>
             <a href="#">Inbox</a>
             <a href="#">Starred</a>
@@ -30,12 +29,124 @@ TODO: Functionality for openDraft function including:
         </div>
         <!-- comment -->
         <div class="ctent">
+          <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+            
+               <div>
+               <h2 style="float: left;">New Message</h2>
+               <button type="button" class="btn cancel" id="cancel" onclick="closeForm()">X</button>
+               <div style="clear: both;"></div>
+               </div>
+               <label for="To"><b>To</b></label>
+               <input type="text" placeholder="" id="button" name="email" required>
+           
+               <label for="psw"><b>Subject</b></label>
+               <input type="subject" placeholder=" " id="button1" name="psw" required>
+               <br><br>
+              <div id="draft1">                            
+                 
+                 <!-- <form action="/action_page.php"> -->
+                   <label for="cars"></label>
+                   <select id="cars" name="cars">
+                     <option value="none">(None)</option>
+                     <option value="saab">heeeeeey</option>
+                     <option value="fiat">George,</option>
+                     <option value="audi">Dear Employee Name,</option>
+                   </select>
+                   <br>
+                   <p>It's my pleasure to inform you about our new raffle program as a part of our initiative to increase employee involvement! Opt-in here at no cost by 
+                   <select id="a" name="cars">
+                     <option value="none">(None)</option>
+                     <option value="saab">the end of the day</option>
+                     <option value="fiat">the end this year</option>
+                   </select>
+                   to have a chance to receive Apple AirPods.</p>
+                   <p>Best,</p>
+                   <select id="a" name="cars">
+                     <option value="none">(None)</option>
+                     <option value="saab">Your Worst Nightmare</option>
+                     <option value="fiat">James Smith</option>
+                     <option value="fiat">makin bacon</option>
+                   </select>
+                   <br>
+                   <!-- <input type="submit">
+                 </form>>
+                   -->
+                 </div>
+
+                 <div id="draft2">                            
+                 
+                   <!-- <form action="/action_page.php"> -->
+                     <label for="cars"></label>
+                     <select id="cars" name="cars">
+                       <option value="none">(None)</option>
+                       <option value="saab">heeeeeey</option>
+                       <option value="fiat">Greetings,</option>
+                       <option value="audi">Dear Employee Name,</option>
+                     </select>
+                     <br> 
+                     <p>I heard about this internal discount and thought you would be interested: link. It expires 
+                     <select id="a" name="cars">
+                       <option value="none">in the next two hours</option>
+                       <option value="saab">by the end of the day</option>
+                       <option value="fiat">by the end this week</option>
+                     </select>
+                     so make sure to get it quickly!</p>
+                     <p>Best,</p>
+                     <select id="a" name="cars">
+                       <option value="none">(None)</option>
+                       <option value="saab">Your Worst Nightmare</option>
+                       <option value="fiat">James Smith</option>
+                       <option value="fiat">makin bacon</option>
+                     </select>
+                     <br>
+                     <!-- <input type="submit">
+                   </form>>
+                     -->
+                   </div>
+
+
+                   <div id="draft3">                            
+                 
+                     <!-- <form action="/action_page.php"> -->
+                       <label for="cars"></label>
+                       <select id="cars" name="cars">
+                         <option value="none">(None)</option>
+                         <option value="saab">heeeeeey</option>
+                         <option value="fiat">Greetings,</option>
+                         <option value="audi">Dear Employee Name,</option>
+                       </select>
+                       <br> 
+                       <p>Please schedule a meeting with an HR representative
+                       <select id="a" name="cars">
+                         <option value="none">within the next few weeks</option>
+                         <option value="saab">by the end of the week</option>
+                         <option value="fiat">by the end this month</option>
+                       </select>
+                       for a yearly training on updated expectations and workplace conduct. We will have someone free during business hours 9am to 5pm for your training.</p>
+                       <p>Sincerly,</p>
+                       <select id="a" name="cars">
+                         <option value="none">(None)</option>
+                         <option value="saab">Your Worst Nightmare</option>
+                         <option value="fiat">James Smith</option>
+                         <option value="fiat">makin bacon</option>
+                       </select>
+                       <br>
+                       <!-- <input type="submit">
+                     </form>>
+                       -->
+                     </div>
+              <br>
+               <button type="button" id="send" class="btn">Send</button>
+            
+             </form>
+           </div>
             <!-- TOP NAVIGATION MENU -->
             <div class="topnav">
-                <a class="active" href="#">[Mail Name]</a>
+                <!-- <a class="active" href="#">Drafts</a> -->
                 <div class="search-container">
                     <form action="/">
-                    <input type="text" placeholder="Search.." name="search">
+                    <input type="text" placeholder="Drafts..." name="search">
                     </form>
                 </div>
             </div>
@@ -43,147 +154,20 @@ TODO: Functionality for openDraft function including:
             <div class="email">
                 <table>
                     <tr>
-                        <th>DRAFTS</th>
+                        <th> </th>
                       </tr>
                       <tr>
-                        <td><button class="email" onclick="openDraft(1);">Draft 1</button></td>
+                        <td><button class="email" onclick="openDraft(1);">Draft: (empty)</button></td>
                       </tr>
                       <tr>
-                        <td><button class="email" onclick="openDraft(2);">Draft 2</button></td>
+                        <td><button class="email" onclick="openDraft(2);">Draft: (empty)</button></td>
                       </tr>
                       <tr>
-                        <td><button class="email" onclick="openDraft(3);">Draft 3</button></td>
-                      </tr>
-                      <button class="open-button" onclick="openForm()">Draft 1</button>
-
-                      <div class="form-popup" id="myForm">
-                       <form action="/action_page.php" class="form-container">
-                       
-                          <button type="button" class="btn cancel" id="cancel" onclick="closeForm()">X</button>
-                          <h1>New Message</h1>
-             
-                          <label for="To"><b>To</b></label>
-                          <input type="text" placeholder="" id="button" name="email" required>
-                      
-                          <label for="psw"><b>Subject</b></label>
-                          <input type="subject" placeholder=" " id="button1" name="psw" style= "margin-left: 10px" required>
-                          
-                          <label for="w3review"></label>
-                          <textarea id="w3review" name="w3review" rows="30" cols="30" style= "width: 93%;">
-                         </textarea>
-                         
-
-
-
-
-                         <div id="draft1">                            
-                            
-                            <!-- <form action="/action_page.php"> -->
-                              <label for="cars"></label>
-                              <select id="cars" name="cars">
-                                <option value="none">(None)</option>
-                                <option value="saab">heeeeeey</option>
-                                <option value="fiat">George,</option>
-                                <option value="audi">Dear Employee Name,</option>
-                              </select>
-                              <br>
-                              <br> 
-                              <p>It's my pleasure to inform you about our new raffle program as a part of our initiative to increase employee involvement! Opt-in here at no cost by 
-                              <select id="a" name="cars">
-                                <option value="none">(None)</option>
-                                <option value="saab">the end of the day</option>
-                                <option value="fiat">the end this year</option>
-                              </select>
-                              to have a chance to receive Apple AirPods.</p>
-                              <p>Best,</p>
-                              <select id="a" name="cars">
-                                <option value="none">(None)</option>
-                                <option value="saab">Your Worst Nightmare</option>
-                                <option value="fiat">James Smith</option>
-                                <option value="fiat">makin bacon</option>
-                              </select>
-                              <br>
-                              <!-- <input type="submit">
-                            </form>>
-                              -->
-                            </div>
-
-                            <div id="draft2">                            
-                            
-                              <!-- <form action="/action_page.php"> -->
-                                <label for="cars"></label>
-                                <select id="cars" name="cars">
-                                  <option value="none">(None)</option>
-                                  <option value="saab">heeeeeey</option>
-                                  <option value="fiat">Greetings,</option>
-                                  <option value="audi">Dear Employee Name,</option>
-                                </select>
-                                <br>
-                                <br> 
-                                <p>I heard about this internal discount and thought you would be interested: link. It expires 
-                                <select id="a" name="cars">
-                                  <option value="none">in the next two hours</option>
-                                  <option value="saab">by the end of the day</option>
-                                  <option value="fiat">by the end this week</option>
-                                </select>
-                                so make sure to get it quickly!</p>
-                                <p>Best,</p>
-                                <select id="a" name="cars">
-                                  <option value="none">(None)</option>
-                                  <option value="saab">Your Worst Nightmare</option>
-                                  <option value="fiat">James Smith</option>
-                                  <option value="fiat">makin bacon</option>
-                                </select>
-                                <br>
-                                <!-- <input type="submit">
-                              </form>>
-                                -->
-                              </div>
-
-
-                              <div id="draft3">                            
-                            
-                                <!-- <form action="/action_page.php"> -->
-                                  <label for="cars"></label>
-                                  <select id="cars" name="cars">
-                                    <option value="none">(None)</option>
-                                    <option value="saab">heeeeeey</option>
-                                    <option value="fiat">Greetings,</option>
-                                    <option value="audi">Dear Employee Name,</option>
-                                  </select>
-                                  <br>
-                                  <br> 
-                                  <p>Please schedule a meeting with an HR representative
-                                  <select id="a" name="cars">
-                                    <option value="none">within the next few weeks</option>
-                                    <option value="saab">by the end of the week</option>
-                                    <option value="fiat">by the end this month</option>
-                                  </select>
-                                  for a yearly training on updated expectations and workplace conduct. We will have someone free during business hours 9am to 5pm for your training.</p>
-                                  <p>Sincerly,</p>
-                                  <select id="a" name="cars">
-                                    <option value="none">(None)</option>
-                                    <option value="saab">Your Worst Nightmare</option>
-                                    <option value="fiat">James Smith</option>
-                                    <option value="fiat">makin bacon</option>
-                                  </select>
-                                  <br>
-                                  <!-- <input type="submit">
-                                </form>>
-                                  -->
-                                </div>
-
-
-
-                        
-                          <button type="button" id="send" class="btn">Send</button>
-                       
-                        </form>
-                      </div>
+                        <td><button class="email" onclick="openDraft(3);">Draft: (empty)</button></td>
+                      </tr>                   
 
                 </table>
             </div>
-            <div> draft viewer</div>
         </div>
     </body>
 </html>
