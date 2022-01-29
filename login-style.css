@@ -1,10 +1,49 @@
 #login {
-    background-color: red;
+    background-color: rgb(112, 145, 184);
     border: solid 2px black;
+    width: 1000px;
+    height: 800px;
+    margin-left: 300px;
 
+   
 }
 
 #forgot-password {
-    background-color: gray;
+    background-color: rgb(155, 199, 168);
     border: solid 2px black;
+    width: 1000px;
+    height: 800px;
+    margin-left: 300px;
+
+}
+
+#word-login {
+    font-size: 35px;
+    margin-left: 450px;
+}
+
+#padding {
+    padding: 3px;
+    width: 25%;
+    font-size: 20px;
+    margin-left: 375px;
+}
+
+#words {
+    margin-left: 375px;
+}
+
+#forg {
+    margin-left: 510px;
+}
+
+#LOGIN {
+    margin-left: 375px;
+    background-color: rgba(200, 164, 224, 0.966);
+    font-size: 20px;
+}
+
+#reset {
+    font-size: 35px;
+    margin-left: 265px;
 }

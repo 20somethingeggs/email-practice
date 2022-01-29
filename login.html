@@ -19,13 +19,50 @@ TODO: Functionality for openDraft function including:
         
         <!-- Login -->
         <div id="login">
-            <p>login</p>
-            <button onclick="forgot()">Forgot password?</button>
+            <div id="word-login">
+            <p>Login</p>
+            </div>
+            <div>
+                <label id="words"<b>* Indicates Required Field</b></label>
+                <br><br>
+                <div style="clear: both;"></div>
+                <label id="words" for="To"><b>Email or User ID *</b></label>
+                <name="email" required>
+                <br><br>
+            </div>
+            <input type="text" placeholder="" id="padding">
+            <br><br>
+            <div>
+                <label id="words"for="psw"><b>Password *</b></label>
+                <name="psw" required>
+                <br><br>
+                <input type="subject" placeholder=" " id="padding">
+               <div id="draft1"></div>
+            </div>
+            <button id="forg" onclick="forgot()">Forgot password?</button>
+
+            <br><br>
+            <button id="LOGIN"> Login</button>
         </div>
+
         <!-- Forgot Password -->
-        <div id="forgot-password" style="display: none">
-            <p>forgot password</p>
-            <button onclick="login()">Login</button>
+        <div id="forgot-password" style="display: None">
+            <div id="reset"> 
+                <p>Reset or recover your login settings.</p>
+            </div>
+            <br><br>
+            <p> Forgot your password? Enter your user ID and registered email address in the fields below, and we'll help you to reset it.</p>
+            <label id="words"<b>* Indicates Required Field</b></label>
+            <div>
+                <label id="words" for="To"><b>Email or User ID *</b></label>
+                <name="email" required>
+                <br><br>
+                <div style="clear: both;"></div>
+                <label for="To"><b>Email</b></label>
+                <input type="text" placeholder="" id="padding" name="email" required>
+            </div>
+
+            <button onclick="login()">Reset Password</button>
         </div>
     </body>
 </html>
