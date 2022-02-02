@@ -3,9 +3,7 @@
     border: solid 2px black;
     width: 1000px;
     height: 800px;
-    margin-left: 300px;
-
-   
+    margin-left: 300px; 
 }
 
 #forgot-password {
@@ -14,7 +12,6 @@
     width: 1000px;
     height: 800px;
     margin-left: 300px;
-
 }
 
 #word-login {
@@ -29,12 +26,23 @@
     margin-left: 375px;
 }
 
+#padding1 {
+    padding: 3px;
+    width: 25%;
+    font-size: 20px;
+    margin-left: 375px;
+}
+
 #words {
     margin-left: 375px;
 }
 
 #forg {
     margin-left: 510px;
+}
+
+#forg1 {
+    margin-left: 375px;
 }
 
 #LOGIN {
@@ -46,4 +54,10 @@
 #reset {
     font-size: 35px;
     margin-left: 265px;
+}
+
+#search {
+    border: solid 2px black;
+    height: 25px;
+    width: 99.5%
 }
